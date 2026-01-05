@@ -98,14 +98,21 @@ function documentLoader() {
   statsLoader();
   // Event listener for sel1 change
   function selectHand(event) {
-  var visible_mary = document.getElementsByClassName('#MWS');
-  var visible_percy = document.getElementsByClassName('#PBS');
+  var visible_mary = document.getElementsByClassName('MWS');
+  var visible_percy = document.getElementsByClassName('PBS');
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-     
+    MaryArray.forEach(element => {
+      element.style.color = 'black';
+      element.style.display = 'inline';
+    });
+    PercyArray.forEach(element => {
+      element.style.color = 'black';
+      element.style.display = 'inline';
+    });
     } else if (event.target.value == 'Mary') {
      //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
      
