@@ -34,43 +34,44 @@
         <pb facs="#p23v"/>
         <metamark function="pagenumber"><num><hi rend="circled">80</hi></num></metamark>
         <p>
-        <l>the doors being opened <unclear reason="ink blot">I</unclear> perceived Henry</l> 
-        <l>Clerval, who on <del type="crossedOut"/><unclear/>seeing me instantly sprung out.</l>
-      </p>
-      <p>
-        <l rend="indent"> "My dear Frankenstein," exclaimed he.</l>
-        <l>"How glad I am to see you; how</l>
-        <l>"fortunate <add place="supralinear">that</add> you should be here at</l>
-        <l>"the <add place="sublinear"><metamark function="insert">^</metamark></add>
-          <add place="supralinear">very</add> moment of my alighting"</l>
-      </p>
-      <p>
-        <l rend="indent">Nothing could equal my delight</l>
-        <l>on <del rend="crossedOut">see</del><choice><sic>seing</sic><corr>seeing</corr></choice> Clerval: his presence</l>
-        <l>brought back to my thoughts my fa-</l>
-        <l>ther, Elizabeth and all those scenes</l>
-        <l>of home so dear to my recollection.</l>
-        <l>I grasped his hand, and in a moment</l>
-        <l>forgot my horror and misfortune</l>
-        <l>I felt <add place="sublinear"><metamark function= "insert">^</metamark></add><add place="supralinear"> suddenly,<unclear reason="handwriting"> and</unclear></add> for the first time 
-          <del rend="crossedOut">for</del><add place="supralinear">during</add></l>
-        <l>many months, calm and serene</l>
-        <l>joy. I welcomed my friend therefore</l>
-        <l>in the most cordial manner &amp;</l>
-        <l>we walked towards my colledge.</l>
-        <l>Clerval <del rend="crossedOut">ran on</del><del rend="crossedOut"> talked</del> continued</l>
-        <l>talking for some time about <del rend="crossedOut">my</del><add place="supralinear">our mutual</add></l>
-        <l>friends and his <add place="supralinear">own</add> good fortune in</l>
-        <l>being allowed to come Ingolstadt.</l>
-      </p>
-      <p> 
-        <l>"You may believe", said he, "<del rend="crossedOut">that</del></l>
-        <l>"it was not with<del rend="crossedOut">out</del>considerable</l>
-        <l>"trouble that I persuaded my</l>
-        <l>"father that it is not absolutely</l>
-        <l>"necessary for a merchant to</l>
-        <l>"know nothing except bookeeping</l>
-      </p>
+        the doors being opened I perceived Henry<lb/> <!-- while the inkblot is there, it is not acknowledged by the SGA transcription -->
+        Clerval, who on <del type="crossedOut" hand="#MWS">seee</del> seeing me instantly sprung out.<lb/>
+        </p>
+        <p style="text-indent:20px">
+        "My dear <choice><sic>Frankenstien</sic><corr>Frankenstein</corr></choice>," exclaimed he.<lb/>
+        "How glad I am to see you; how<lb/>
+        "fortunate <add place="supralinear" hand="#PBS">that</add> you should be here at<lb/>
+        "the <add place="infralinear"><metamark>&#8248;</metamark></add>
+          <add place="supralinear" hand="#PBS">very</add> moment of my alighting"<lb/>
+        </p>
+        <p style="text-indent:20px">
+        Nothing could equal my delight<lb/>
+        on <del rend="crossedOut" hand="#MWS">see</del><choice><sic>seing</sic><corr>seeing</corr></choice> Clerval: his presence<lb/>
+        brought back to my thoughts my fa-<lb/>
+        ther, Elizabeth and all those scenes<lb/>
+        of home so dear to my recollection.<lb/>
+        I grasped his hand, and in a moment<lb/>
+        forgot my horror and misfortune.<lb/>
+        I felt <add place="infralinear"><metamark>&#8248;</metamark></add><add place="supralinear"> suddenly,and</add> 
+        for the first time <del rend="crossedOut" hand="#PBS">for</del>
+        <add place="supralinear">during</add><lb/>
+        many months<add place="inline" hand="#PBS">,</add> calm and serene<lb/> <!-- genuinely wondering how one can recognise someone's hand from a comma -->
+        joy. I welcomed my friend therefore<lb/>
+        in the most cordial manner &amp;<lb/>
+        we walked towards my colledge.<lb/>
+        Clerval <del rend="crossedOut" hand="#MWS">ran on</del> <del rend="crossedOut" hand="#MWS">talked</del> continued<lb/>
+        talking for some time about <del rend="crossedOut" hand="#PBS">my</del><add place="supralinear" hand="#PBS">our mutual</add><lb/>
+        friends and his <add place="supralinear" hand="#PBS">own</add> good fortune in<lb/>
+        being allowed to come Ingolstadt.<lb/>
+        </p>
+        <p style="text-indent:20px"> 
+          "You may believe", said he,"<del rend="crossedOut" hand="#MWS">that</del><lb/>
+          "it was not with<del rend="crossedOut" hand="#MWS">out</del>considerable<lb/>
+        "trouble that I persuaded my<lb/>
+        "father that it is not absolutely<lb/>
+        "necessary for a merchant to<lb/>
+          "know nothing except <choice><sic>bookeeping</sic><corr>bookkeeping</corr></choice><lb/>
+        </p>
       </div>                    
     </body>
   </text>

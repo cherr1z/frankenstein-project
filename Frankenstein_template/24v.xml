@@ -35,13 +35,15 @@
             <pb facs="#p24v"/>
             <metamark function="pagenumber"><num><hi rend="circled">82</hi></num></metamark>
          <p>
-            "see; but I hope, I sincerely hope all those<lb/>
+            "see<add place="inline" hand="#PBS">;</add> but I hope, I sincerely hope all those<lb/>
             "occupations are at an end—I am free<lb/>
             "now I hope."<lb/>
+         </p>
+         <p style="text-indent:20px">
             I trembled excessively: I could not<lb/>
-            bear to think of, &amp; far less to allude<lb/>
-            to the occurences of the prece<del type="crossedOut">e</del>ding<lb/>
-            night. <del type="crossedOut">I continued to walk there</del> I<lb/>
+            bear to think of<add place="inline" hand="#PBS">,</add> &amp; far less to allude<lb/>
+            to the occurences of the prece<del type="crossedOut" hand="#MWS">e</del>ding<lb/>
+            night. <del type="crossedOut" hand="#MWS">I continued to walk there</del> I<lb/>
             walked therefore with a quick pace,<lb/>
             and we soon arrived at my colledge.<lb/>
             I then reflected–and the thought made<lb/>
@@ -50,10 +52,10 @@
             be still there—alive and walking<lb/>
             about. I dreaded to see him but I<lb/>
             dreaded still more that Henry should<lb/>
-            behold the monst<del type="crossedOut">h</del>er.<del type="crossedOut">I therefore</del><lb/>
-            entreat<del type="crossedOut">ed</del><add>ing</add> him <add place="supralinear">therefore</add> to remain a few<lb/>
-            minutes at the bottom of the<lb/>
-            stairs, <del type="crossedOut">while</del>I darted upwards<lb/>
+            behold the monst<del type="crossedOut" hand="#MWS">h</del>er.<del type="crossedOut" hand="#MWS">I therefore</del><lb/>
+            entreat<del type="crossedOut" hand="#PBS">ed</del><add place="inline" hand="#PBS">ing</add> him <add place="infralinear" hand="#PBS"><metamark>&#8248;</metamark></add><add place="supralinear" hand="#PBS">therefore</add> to remain a few<lb/>
+            minute<add place="inline" hand="#PBS">s</add> at the bottom of the<lb/>
+            stairs, <del type="crossedOut" hand="#MWS">while</del>I darted upwards<lb/>
             my own room. My hand was already<lb/>
             on the lock before I recovered<lb/>
             myself, when I paused and a cold<lb/>
@@ -65,8 +67,9 @@
             nothing appeared. I stepped fearfully<lb/>
             in–the appartment was empty, and<lb/>
             my bedroon was also freed from its<lb/>
-            hideous guest. I could hardly <del type="crossedOut">belief</del><lb/>
-         </p></div>
+            hideous guest. I could hardly <del type="crossedOut" hand="#MWS">belief</del><lb/>
+         </p>
+         </div>
       </body>
   </text>
 </TEI>

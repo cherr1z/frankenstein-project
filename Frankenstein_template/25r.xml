@@ -35,43 +35,45 @@
             <pb facs="#p25r"/>
             <metamark function="pagenumber"><num><hi rend="circled">83</hi></num></metamark>
             <p>
-               <l>believe that so great a good fortune</l>
-               <l>could have befallen me; but when</l>
-               <l>I 
-                   <del type="crossedOut" hand="#PBS" rend="black ink">was</del>
-                   <add hand="#PBS" place="supralinear">became</add>
-                   assured that my enemy had</l>
-               <l>indeed fled, I clapped my hands for</l>
-               <l>joy and ran down to Henry.</l>
-               <l><hi rend="indented">We ascended into my room &amp; present</hi></l>
-               <l>ly the servant brought breakfast:</l>
-               <l>but I was unable to contain my-</l>
-               <l>self. It was not joy only that possess-</l>
-               <l>-ed me,–I felt my flesh tingle with</l>
-               <l>the excess of sensitiveness and my</l>
-               <l>pulse beat rapidly. I was unable to</l>
-               <l>remain for a single instant in</l>
-               <l>the same place — I jumped over</l>
-               <l>the chairs, clapped my hand<add hand="#MWS" place="intralinear">s</add> &amp; laughed</l>
-               <l>aloud. Clerval at first attributed</l>
-               <l>my unusual spirits to joy
-                  <del type="crossedOut" hand="#MWS" rend="black ink">at</del>
-                  <add hand="#MWS" place="supralinear">on</add>
-                  his</l>
-               <l>arrival– but when <del type="crossedOut" hand="#MWS" rend="black ink">saw</del> he observed</l>
-               <l>me <add hand="#PBS" place="inline" rend="black ink"><metamark>^</metamark></add>
-                     <add hand="#PBS" place="supralinear">more attentively</add>
-                     he saw a wildness in my eyes for</l>
-               <l>which he could not account and</l>
-               <l>my loud unrestrained heartless laugh</l>
-               <l>-ter frightened and astonished him.</l>
-               <l><hi rend="indented">My dear Frankenstein," cried he "What</hi></l>
-               <l>for God's sake is the matter <del type="crossedOut" hand="#MWS" rend="black ink">for</del> do not</l>
-               <l>laugh so – <del type="crossedOut" hand="#MWS" rend="black ink">What has</del> How ill you are!</l>
-               <l>What is the cause of all this?</l>
-               <l><hi rend="indented">Do not ask me cried I, putting my</hi></l>
-               <l>hands <del type="crossedOut" hand="#MWS" rend="black ink">fef</del> before my eyes, for I thought</l>
-               <l>I saw <hi rend="u">the spectre</hi> glide into the</l>
+               believe that so great a good fortune<lb/>
+               could have befallen me; but when<lb/>
+               I <del type="crossedOut" hand="#PBS">was</del>
+               <add hand="#PBS" place="supralinear">became</add> assured that my enemy had<lb/>
+               indeed fled, I clapped my hands for<lb/>
+               joy and ran down to Henry.<lb/>
+            </p>
+            <p style="text-indent:20px">
+               We ascended into my room &amp; present<lb/>
+               ly the servant brought breakfast:<lb/>
+               but I was unable to contain my-<lb/>
+               self. It was not joy only that possess-<lb/>
+               -ed me,—I felt my flesh tingle with<lb/>
+               the excess of sensitiveness and my<lb/>
+               pulse beat rapidly. I was unable to<lb/>
+               remain for a single instant in<lb/>
+               the same place — I jumped over<lb/>
+               the chairs, clapped my hand<add hand="#MWS" place="inline">s</add> &amp; laughed<lb/>
+               aloud. Clerval at first attributed<lb/>
+               my unusual spirits to joy <del type="crossedOut" hand="#MWS" >at</del>
+               <add place="supralinear" hand="#MWS">on</add> his<lb/>
+               arrival– but when <del type="crossedOut" hand="#MWS">saw</del> he observed<lb/>
+               me <add hand="#PBS" place="infralinear"><metamark>&#8248;</metamark></add>
+               <add hand="#PBS" place="supralinear">more attentively</add> 
+               he saw a wildness in my eyes for<lb/>
+               which he could not account and<lb/>
+               my loud unrestrained heartless laugh<lb/>
+               -ter frightened and astonished him.<lb/>
+            </p>
+            <p style="text-indent:20px">
+               My dear Frankenstein," cried he "What<lb/>
+               for God's sake is the matter <del type="crossedOut" hand="#MWS">for</del> do not<lb/>
+               laugh so – <del type="crossedOut" hand="#MWS">What has</del> How ill you are!<lb/>
+               What is the cause of all this?<lb/>
+            </p>
+            <p style="text-indent:20px">
+               Do not ask me cried I, putting my<lb/>
+               hands <del type="crossedOut" hand="#MWS">fef</del> before my eyes, for I thought<lb/>
+               I saw <hi rend="u">the spectre</hi> glide into the<lb/>
             </p>
          </div>
       </body>

@@ -38,35 +38,45 @@
                "and Indeed I believe I left him<lb/>
                "incredulous to the last for his con<lb/>
                "stant answer to my applications<lb/>
-               "was the same as <add place="supralinear" hand="#MWS" rend="blackink">that of</add> the dutch school<lb/>
+               "was the same as <add place="infralinear" hand="#PBS"><metamark>&#8248;</metamark></add><add place="supralinear" hand="#PBS">that of</add> the dutch school<lb/>
                "master in the Vicar of Wakefield-<lb/>
-               <add place="marginleft" hand="#MWS" rend="blackink">"<del type="crossedOut" hand="#MWS" rend="blackink">a year</del> with<lb/>"out greek -I<lb/>"eat heartily<lb/>withoug greek<lb/>of-</add>
-               <del type="crossedOut" hand="#MWS" rend="blackink">"I live very well yet I do not know</del><lb/>
-               <del type="crossedOut" hand="#MWS" rend="blackink">"Greek</del>" I have ten thousand florins-<lb/>
+               <add place="marginleft" hand="#MWS" >
+                  <del type="crossedOut" hand="#MWS">y<hi rend="sup">r</hi>.</del> <!-- unsure about type of deletion -->
+                  "<del type="crossedOut" hand="#MWS">a year</del>  with<lb/>
+                  "out greek -I<lb/>
+                  "eat heartily<lb/>
+                  withoug greek<lb/>
+                  of-</add>
+               <del type="crossedOut" hand="#MWS" >"I live very well yet I do not know</del><lb/>
+               <del type="crossedOut" hand="#MWS" >"Greek</del>" I have ten thousand florins—<lb/>
                "But his affection for me at<lb/>
                "lenght overcame his dislike for<lb/>
                "learning, and he permitted me<lb/>
-               "to <add place="supralinear" hand="#PBS" rend="blackink">under</add>take a voyage <add place="supralinear" hand="#PBS" rend="blackink">of discovery</add> to the land of<lb/>
+               "to <add place="infralinear" hand="#PBS"><metamark>&#8248;</metamark></add><add place="supralinear" hand="#PBS">under</add>take a voyage <add place="supralinear" hand="#PBS">of discovery</add> to the land of<lb/>
                "knowledge."<lb/>
             </p>
-            <p>
+            <p style="text-indent=20px">
                "And my father, brothers &amp; Eliza<lb/>
                beth" said I<lb/>
+            </p>
+            <p style="text-indent=20px">
                "Very well &amp; very happy" replied<lb/>
-               he "only a little uneasy that <del type="crossedOut" hand="#MWS" rend="blackink">yo</del><lb/>
+               he "only a little uneasy that <del type="crossedOut" hand="#MWS" >yo</del><lb/>
                "they hear from you so seldom, &amp;<lb/>
                "by the bye, I mean to lecture you<lb/>
                "a little upon their account<lb/>
-               "myself- But my dear Frankenstein"<lb/>
+               "myself— But my dear Frankenstein"<lb/>
                continued he stopping short &amp; gazing<lb/>
                "full in my face "I did not before<lb/>
                "remark how very ill you are. So thin<lb/>
                "and pale; you appear as if you had<lb/>
                "been watching for several nights."<lb/>
+            </p>
+            <p style="text-indent:20px">
                "You have guessed right" I replied<lb/>
                "I have lately been so engaged in<lb/>
-               "several<add place="supralinear" hand="#PBS" rend="blackink"><del type="crossedOut" hand="#PBS" rend="blackink">studious</del> one</add> occupations that I did<lb/>
-               <add place="marginleft" hand="#PBS" rend="blackink">have</add>"not allow<add place="overwritten" hand="#PBS" rend="blackink">ed</add><add place="supralinear" hand="#MWS" rend="blackink">myself</add> sufficient rest as you<lb/>
+               "several<add place="supralinear" hand="#PBS"><del type="crossedOut" hand="#PBS">studious</del> one</add> occupations that I <del type="crossedOut" hand="#MWS">did</del><lb/>
+               <add place="marginleft" hand="#PBS">have</add>"not allow<add place="inline" hand="#PBS">ed</add><add place="infralinear" hand="#PBS"><metamark>&#8248;</metamark></add> <add place="supralinear" hand="#MWS">myself</add> sufficient rest as you<lb/>
             </p>
          </div>
       </body>
