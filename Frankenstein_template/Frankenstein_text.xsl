@@ -46,35 +46,104 @@
     </xsl:template>
     
     <xsl:template match="tei:p">
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
-
-  <!-- processes the marginal additions again to give them a class to hide them in the 'main' text in css. By hiding them using css, they can also be made visible again when showing a reading text, for example-->
-    <xsl:template match="tei:add[@place = 'marginleft']">
-        <span class="marginAdd">
+        <p>
+            <xsl:if test="@rend='indented'">
+                <xsl:attribute name="class">indented</xsl:attribute>
+            </xsl:if>
+            <xsl:if test="@style">
+                <xsl:attribute name="style">
+                    <xsl:value-of select="@style"/>
+                </xsl:attribute>
+            </xsl:if>
             <xsl:apply-templates/>
-        </span>
+        </p>
     </xsl:template>
     
+     <!-- Marginal additions -->
+    <xsl:template match="tei:add[@place = 'marginleft']">
+    <span class="marginAdd">
+        <xsl:attribute name="class">
+            <xsl:text>marginAdd</xsl:text>
+            <xsl:value-of select="substring-after(@hand, '#')"/>
+        </xsl:attribute>
+        <xsl:apply-templates/>
+    </span>
+</xsl:template>
     
+    <!-- Deletions with hand attribute -->
     <xsl:template match="tei:del">
         <del>
             <xsl:attribute name="class">
-                <xsl:value-of select="@hand"/>
+                <xsl:value-of select="substring-after(@hand, '#')"/>
             </xsl:attribute>
             <xsl:apply-templates/>
         </del>
     </xsl:template>
     
-    <!-- all the supralinear additions are given in a span with the class supraAdd, make sure to put this class in superscript in the CSS file, -->
+    <!-- Supralinear additions -->
     <xsl:template match="tei:add[@place = 'supralinear']">
-        <span class="supraAdd">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>supraAdd </xsl:text>
+                <xsl:value-of select="substring-after(@hand, '#')"/>
+            </xsl:attribute>
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     
+    <!-- Infralinear additions -->
+    <xsl:template match="tei:add[@place = 'infralinear']">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>infraAdd </xsl:text>
+                <xsl:value-of select="substring-after(@hand, '#')"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     
-    <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
-
+    <!-- Inline additions -->
+    <xsl:template match="tei:add[@place = 'inline']">
+        <span>
+            <xsl:attribute name="class">
+                <xsl:text>inlineAdd </xsl:text>
+                <xsl:value-of select="substring-after(@hand, '#')"/>
+            </xsl:attribute>
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
     
+    <!-- Line breaks -->
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
+    
+    <!-- Highlighted/circled text -->
+    <xsl:template match="tei:hi[@rend = 'circled']">
+        <span class="circled">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <xsl:template match="tei:hi[@rend = 'sup']">
+        <sup>
+            <xsl:apply-templates/>
+        </sup>
+    </xsl:template>
+    
+    <!-- Metamark -->
+    <xsl:template match="tei:metamark">
+        <span class="metamark">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
+    <!-- Page break -->
+    <xsl:template match="tei:pb">
+        <div class="pagebreak">
+            <xsl:text>[Page </xsl:text>
+            <xsl:value-of select="substring-after(@facs, '#')"/>
+            <xsl:text>]</xsl:text>
+        </div>
+    </xsl:template>    
 </xsl:stylesheet>
