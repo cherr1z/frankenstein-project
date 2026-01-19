@@ -141,9 +141,14 @@
     <!-- Page break -->
     <xsl:template match="tei:pb">
         <div class="pagebreak">
-            <xsl:text>[Page </xsl:text>
+            <xsl:text>Page </xsl:text>
             <xsl:value-of select="substring-after(@facs, '#')"/>
-            <xsl:text>]</xsl:text>
         </div>
+    </xsl:template>
+
+    <xsl:template match="tei:num">
+        <span class="pageNumber">
+            <xsl:apply-templates/>
+        </span>
     </xsl:template>    
 </xsl:stylesheet>
