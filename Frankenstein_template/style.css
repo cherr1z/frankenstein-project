@@ -212,7 +212,17 @@ h4 {
   margin-bottom: 2rem;
 }
 
-
+button {
+  background: rgba(255, 215, 0, 0.2);
+  border: 1px solid #ffd700;
+  color: #e8e8e8;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 1rem;
+}
 
 #my-mirador {
   background: rgba(255, 255, 255, 0.05);
@@ -275,18 +285,6 @@ h4 {
     color: #666;
     font-style: italic;
     margin-bottom: 10px;
-}
-
-#text .MWS {
-  background-color: rgba(255, 182, 193, 0.5);
-  padding: 2px 4px;
-  border-radius: 3px;
-}
-
-#text .PBS {
-  background-color: rgba(173, 216, 230, 0.5);
-  padding: 2px 4px;
-  border-radius: 3px;
 }
 
 #text .sup {

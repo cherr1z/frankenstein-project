@@ -43,9 +43,8 @@ var mirador = Mirador.viewer({
 });
 
 
-// function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl", this will apply the templates and output the text in the html <div id="text">
+// function to transform the text encoded in TEI with the xsl stylesheet "Frankenstein_text.xsl"
 function documentLoader() {
-
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
       fetch("Frankenstein_text.xsl").then(response => response.text())
@@ -60,17 +59,16 @@ function documentLoader() {
       var resultDocument = xsltProcessor.transformToFragment(xml_doc, document);
 
       var criticalElement = document.getElementById("text");
-      criticalElement.innerHTML = ''; // Clear existing content
+      criticalElement.innerHTML = '';
       criticalElement.appendChild(resultDocument);
     })
     .catch(function (error) {
       console.error("Error loading documents:", error);
     });
-  }
+}
   
-// function to transform the metadate encoded in teiHeader with the xsl stylesheet "Frankenstein_meta.xsl", this will apply the templates and output the text in the html <div id="stats">
-  function statsLoader() {
-
+// function to transform the metadata encoded in teiHeader with the xsl stylesheet "Frankenstein_meta.xsl"
+function statsLoader() {
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
       fetch("Frankenstein_meta.xsl").then(response => response.text())
@@ -85,41 +83,109 @@ function documentLoader() {
       var resultDocument = xsltProcessor.transformToFragment(xml_doc, document);
 
       var criticalElement = document.getElementById("stats");
-      criticalElement.innerHTML = ''; // Clear existing content
+      criticalElement.innerHTML = '';
       criticalElement.appendChild(resultDocument);
     })
     .catch(function (error) {
       console.error("Error loading documents:", error);
     });
-  }
+}
 
-  // Initial document load
-  documentLoader();
-  statsLoader();
-  // Event listener for sel1 change
-  function selectHand(event) {
+// Initial document load
+documentLoader();
+statsLoader();
+// Event listener for hand selection dropdown
+function selectHand(event) {
   var visible_mary = document.getElementsByClassName('MWS');
   var visible_percy = document.getElementsByClassName('PBS');
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
-    if (event.target.value == 'both') {
-    //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
+  
+  if (event.target.value == 'both') {
     MaryArray.forEach(element => {
-      element.style.color = 'black';
-      element.style.display = 'inline';
+      element.style.backgroundColor = 'transparent';
     });
     PercyArray.forEach(element => {
-      element.style.color = 'black';
+      element.style.backgroundColor = 'transparent';
+    });
+    
+  } else if (event.target.value == 'Mary') {
+    MaryArray.forEach(element => {
+      element.style.backgroundColor = 'rgba(236, 143, 157, 0.7)';
+    });
+    PercyArray.forEach(element => {
+      element.style.backgroundColor = 'transparent';
+    });
+    
+  } else {
+    MaryArray.forEach(element => {
+      element.style.backgroundColor = 'transparent';
+    });
+    PercyArray.forEach(element => {
+      element.style.backgroundColor = 'rgba(173, 216, 230, 0.7)';
+    });
+  }
+}
+
+// Toggle deletions on/off
+function toggleDeletions() {
+  var deletions = document.querySelectorAll('del');
+  deletions.forEach(element => {
+    if (element.style.display === 'none') {
+      element.style.display = 'inline';
+    } else {
+      element.style.display = 'none';
+    }
+  });
+}
+
+// Toggle between diplomatic view and reading text view
+let isReadingView = false;
+
+function toggleReadingView() {
+  var deletions = document.querySelectorAll('del');
+  var supraAdds = document.querySelectorAll('.supraAdd');
+  var infraAdds = document.querySelectorAll('.infraAdd');
+  var inlineAdds = document.querySelectorAll('.inlineAdd');
+  
+  if (!isReadingView) {
+    // Switch to reading view
+    deletions.forEach(element => {
+      element.style.display = 'none';
+    });
+    supraAdds.forEach(element => {
+      element.style.verticalAlign = 'baseline';
+      element.style.fontSize = 'inherit';
+      element.style.backgroundColor = 'transparent';
+    });
+    infraAdds.forEach(element => {
+      element.style.verticalAlign = 'baseline';
+      element.style.fontSize = 'inherit';
+      element.style.backgroundColor = 'transparent';
+    });
+    inlineAdds.forEach(element => {
+      element.style.backgroundColor = 'transparent';
+    });
+    isReadingView = true;
+  } else {
+    // Switch back to diplomatic view
+    deletions.forEach(element => {
       element.style.display = 'inline';
     });
-    } else if (event.target.value == 'Mary') {
-     //write an forEach() method that shows all the text written and modified by Mary in a different color (or highlight it) and the text by Percy in black. 
-     
-    } else {
-     //write an forEach() method that shows all the text written and modified by Percy in a different color (or highlight it) and the text by Mary in black.
-    
-    }
+    supraAdds.forEach(element => {
+      element.style.verticalAlign = 'super';
+      element.style.fontSize = 'smaller';
+      element.style.backgroundColor = '';
+    });
+    infraAdds.forEach(element => {
+      element.style.verticalAlign = 'sub';
+      element.style.fontSize = 'smaller';
+      element.style.backgroundColor = '';
+    });
+    inlineAdds.forEach(element => {
+      element.style.backgroundColor = '';
+    });
+    isReadingView = false;
   }
-// write another function that will toggle the display of the deletions by clicking on a button
-// EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
+}
