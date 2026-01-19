@@ -1,8 +1,11 @@
 // Declare variables for getting the xml file for the XSL transformation (folio_xml) and to load the image in IIIF on the page in question (number).
 let tei = document.getElementById("folio");
+console.log("tei element:", tei);
+console.log("tei.innerHTML:", tei ? tei.innerHTML : "element not found");
 let tei_xml = tei.innerHTML;
 let extension = ".xml";
-let folio_xml = tei_xml.concat(extension);
+let folio_xml = "../xml/" + tei_xml.concat(extension);
+console.log("Looking for XML file at:", folio_xml);
 let page = document.getElementById("page");
 let pageN = page.innerHTML;
 let number = Number(pageN);
@@ -47,7 +50,7 @@ var mirador = Mirador.viewer({
 function documentLoader() {
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_text.xsl").then(response => response.text())
+      fetch("../Frankenstein_text.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
@@ -71,7 +74,7 @@ function documentLoader() {
 function statsLoader() {
     Promise.all([
       fetch(folio_xml).then(response => response.text()),
-      fetch("Frankenstein_meta.xsl").then(response => response.text())
+      fetch("../Frankenstein_meta.xsl").then(response => response.text())
     ])
     .then(function ([xmlString, xslString]) {
       var parser = new DOMParser();
