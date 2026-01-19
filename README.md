@@ -1,2 +1,0 @@
-# frankenstein-project
-Frankenstein project
