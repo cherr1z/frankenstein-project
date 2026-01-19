@@ -6,7 +6,7 @@ const pageParam = urlParams.get('page') || '44'; // default to 44 if no paramete
 // Set the folio and page values
 let tei_xml = folioParam;
 let extension = ".xml";
-let folio_xml = tei_xml.concat(extension);
+let folio_xml = "xml/" + tei_xml.concat(extension);
 let number = Number(pageParam);
 
 // Display the folio name on the page
