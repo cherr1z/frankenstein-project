@@ -34,7 +34,8 @@
          <div type="page" n="21r" rend="recto">
             <pb facs="#p21r"/>
             <head>
-               Chapter 7<hi rend="sup"><hi rend="u">th</hi></hi><metamark function="pagenumber"><num><hi rend="circled">75</hi></num></metamark>
+               <metamark function="pagenumber"><num><hi rend="circled">75</hi></num></metamark><lb/>
+               Chapter 7<hi rend="sup"><hi rend="u">th</hi></hi>
             </head>
             <p>
                It was on a dreary night of November<lb/>
@@ -64,7 +65,7 @@
                <del type="crossedOut" hand="#MWS" rend="blackink">dun</del> <add place="marginleft" hand="#MWS" rend="blackink">yellow</add> skin scarcely covered the work of<lb/>
                muscles and arteries beneath; his hair<lb/>
                was <add place="marginleft" hand="#MWS" rend="blackink">of a lustrous black &amp;</add><add>^</add> flowing and his teeth of a pearly white<lb/>
-               ness but these luxurianc<add place="intralinear" hand="#MWS" rend="blackink">i</add>es only <del type="crossedOut" hand="#MWS" rend="blackink">fomed</del><lb/>
+               ness but these luxurianc<add place="inline" hand="#MWS" rend="blackink">i</add>es only <del type="crossedOut" hand="#MWS" rend="blackink">fomed</del><lb/>
                formed a more horrid contrast with<lb/>
                his watry eyes that seemed almost of<lb/>
                the same colour as the dun white<lb/>

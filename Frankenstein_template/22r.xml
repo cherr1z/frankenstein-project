@@ -45,7 +45,6 @@
         the grave worms crawling in the folds of<lb/>
         the flannel; I started 
           <add place="infralinear" hand="#MWS"><metamark>^</metamark></add>
-          <note>'^' is used as metamark, close visual resemblance</note>
           <add place="supralinear" hand="#MWS">from my sleep</add>
         with horror, a<lb/>
         <del type="crossedOut" hand="#MWS">when I saw</del>
@@ -64,7 +63,6 @@
         beheld the wretch — the miserable<lb/>
         monster whom I had created;
           <add place="infralinear" hand="#PBS"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
           </add>
           he hel
           <del type="overwritten" hand="#MWS"><unclear></unclear></del>
@@ -72,7 +70,6 @@
         <lb/>
         up the curtain, 
           <add place="infralinear" hand="#MWS"><metamark>-</metamark>
-            <note>'-'is used as metamark, a thick line is used</note>
           </add>
         and his eyes; if eyes<lb/>
         they may be called, were fixed on me – His<lb/>
@@ -86,7 +83,7 @@
         hear — one 
         <del type="crossedOut" hand="#MWS">had</del>
         <add place="inline" hand="#MWS">hand</add> 
-        <!-- changed this from sic/corr to del/add for the sake of uniformity because it doesnt appear anywhere else -->
+        <!-- changed this from sic/corr to del/add as this is not a correction by me -->
         was stretched out<lb/>
         to detain me but I escaped and 
         <del type="crossedOut" hand="#PBS">ran</del><lb/>
