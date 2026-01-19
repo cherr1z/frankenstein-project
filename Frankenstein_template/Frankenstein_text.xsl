@@ -59,18 +59,6 @@
         </p>
     </xsl:template>
     
-     <!-- Marginal additions -->
-    <xsl:template match="tei:add[@place = 'marginleft']">
-    <span class="marginAdd">
-        <xsl:attribute name="class">
-            <xsl:text>marginAdd</xsl:text>
-            <xsl:value-of select="substring-after(@hand, '#')"/>
-        </xsl:attribute>
-        <xsl:apply-templates/>
-    </span>
-</xsl:template>
-    
-    <!-- Deletions with hand attribute -->
     <xsl:template match="tei:del">
         <del>
             <xsl:attribute name="class">
@@ -80,7 +68,6 @@
         </del>
     </xsl:template>
     
-    <!-- Supralinear additions -->
     <xsl:template match="tei:add[@place = 'supralinear']">
         <span>
             <xsl:attribute name="class">
@@ -91,7 +78,6 @@
         </span>
     </xsl:template>
     
-    <!-- Infralinear additions -->
     <xsl:template match="tei:add[@place = 'infralinear']">
         <span>
             <xsl:attribute name="class">
@@ -102,7 +88,6 @@
         </span>
     </xsl:template>
     
-    <!-- Inline additions -->
     <xsl:template match="tei:add[@place = 'inline']">
         <span>
             <xsl:attribute name="class">
@@ -113,12 +98,10 @@
         </span>
     </xsl:template>
     
-    <!-- Line breaks -->
     <xsl:template match="tei:lb">
         <br/>
     </xsl:template>
     
-    <!-- Highlighted/circled text -->
     <xsl:template match="tei:hi[@rend = 'circled']">
         <span class="circled">
             <xsl:apply-templates/>
@@ -130,19 +113,17 @@
             <xsl:apply-templates/>
         </sup>
     </xsl:template>
-    
-    <!-- Metamark -->
-    <xsl:template match="tei:metamark">
-        <span class="metamark">
+
+    <xsl:template match="tei:hi[@rend = 'u']">
+        <u>
             <xsl:apply-templates/>
-        </span>
+        </u>
     </xsl:template>
     
-    <!-- Page break -->
     <xsl:template match="tei:pb">
         <div class="pagebreak">
             <xsl:text>Page </xsl:text>
-            <xsl:value-of select="substring-after(@facs, '#')"/>
+            <xsl:value-of select="substring-after(@facs, '#p')"/>
         </div>
     </xsl:template>
 
@@ -151,4 +132,11 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>    
+
+    <xsl:template match="tei:head">
+        <head>
+            <xsl:apply-templates/>
+        </head>
+    </xsl:template>
+    
 </xsl:stylesheet>
